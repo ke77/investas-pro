@@ -1,0 +1,6 @@
+{
+  "name": "Investas Pro Ghana",
+  "description": "A diversified parent investment and venture ecosystem building high-growth enterprises in recruitment, agribusiness, real estate, and healthcare in Ghana and Africa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

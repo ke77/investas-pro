@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-brand-warm: #FDFCFB;
+  --color-brand-charcoal: #1A1A1A;
+  --color-brand-gold: #F4B41A;
+  --color-brand-bg-light: #F5F2F0;
+  --color-brand-border: #E5E3DF;
+  --color-brand-lime: #A2C11C;
+  --color-brand-lime-hover: #B5DC18;
+  --color-brand-dark-bg: #111111;
+  --color-brand-dark-card: #1C1C1C;
+}
+
+/* Floating layout styles and cinematic overlays */
+.cinematic-overlay {
+  background: linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.75) 100%);
+}
+
+.glass-card {
+  background-color: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Custom fade-up entrance */
+@keyframes customFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-custom-fade-up {
+  animation: customFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
