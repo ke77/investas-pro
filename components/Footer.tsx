@@ -24,7 +24,7 @@ export default function Footer() {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-white rounded-full filter blur-[150px]"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-12 pt-20 pb-12">
+      <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-12 pt-20 pb-12 space-y-5 md:space-y-9">
         {/* Core Top Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 pb-16 border-b border-white/10">
           
@@ -52,7 +52,7 @@ export default function Footer() {
                 href="https://instagram.com/investaspro_gh"
                 target="_blank"
                 rel="noreferrer"
-                className="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-[#F4B41A] hover:bg-[#F4B41A] hover:text-black hover:border-transparent transition-all duration-300"
+                className="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-white/80 hover:bg-[#F4B41A] hover:text-black hover:border-transparent transition-all duration-300"
                 aria-label="Instagram"
               >
                 <Instagram className="w-4 h-4" />
@@ -71,7 +71,7 @@ export default function Footer() {
 
           {/* Column 2: Navigation Links */}
           <div className="lg:col-span-2 space-y-5">
-            <h4 className="text-xs font-bold uppercase tracking-widest text-[#F4B41A]">
+            <h4 className="text-xs font-bold uppercase tracking-widest text-white">
               Ecosystem
             </h4>
             <ul className="space-y-3 text-sm font-medium text-white/60">
@@ -100,7 +100,7 @@ export default function Footer() {
 
           {/* Column 3: Subsidiaries & Focus areas */}
           <div className="lg:col-span-3 space-y-5">
-            <h4 className="text-xs font-bold uppercase tracking-widest text-[#F4B41A]">
+            <h4 className="text-xs font-bold uppercase tracking-widest text-white">
               Subsidiaries
             </h4>
             <ul className="space-y-3 text-sm font-medium text-white/60">
@@ -126,7 +126,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/ventures#healthcare" className="hover:text-[#F4B41A] transition-colors flex items-center gap-1.5">
-                  e-Health Ventures <span className="text-[10px] bg-amber-500/10 text-amber-400 px-1.5 py-0.5 rounded">Planning</span>
+                  e-Health Ventures 
                 </Link>
               </li>
             </ul>
@@ -134,7 +134,7 @@ export default function Footer() {
 
           {/* Column 4: Newsletter & Direct Updates */}
           <div className="lg:col-span-3 space-y-5">
-            <h4 className="text-xs font-bold uppercase tracking-widest text-[#F4B41A]">
+            <h4 className="text-xs font-bold uppercase tracking-widest text-white">
               Stay Updated
             </h4>
             <p className="text-white/60 text-xs leading-relaxed">
@@ -169,56 +169,21 @@ export default function Footer() {
               </form>
             )}
           </div>
-
         </div>
 
-        {/* Middle Details: Location & Reach */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-10 pb-10 border-b border-white/10 text-white/80">
-          <div className="flex items-start gap-4">
-            <div className="p-3 bg-white/5 rounded-xl text-[#F4B41A]">
-              <MapPin className="w-5 h-5" />
-            </div>
-            <div>
-              <p className="text-[11px] uppercase tracking-wider font-bold text-white/40">Location</p>
-              <p className="text-sm font-semibold">Accra, Ghana</p>
-            </div>
-          </div>
-          <div className="flex items-start gap-4">
-            <div className="p-3 bg-white/5 rounded-xl text-[#F4B41A]">
-              <Mail className="w-5 h-5" />
-            </div>
-            <div>
-              <p className="text-[11px] uppercase tracking-wider font-bold text-white/40">Send Email</p>
-              <a href="mailto:investas24@gmail.com" className="text-sm font-semibold hover:text-[#F4B41A] transition-colors">
-                investas24@gmail.com
-              </a>
-            </div>
-          </div>
-          <div className="flex items-start gap-4">
-            <div className="p-3 bg-white/5 rounded-xl text-[#F4B41A]">
-              <Phone className="w-5 h-5" />
-            </div>
-            <div>
-              <p className="text-[11px] uppercase tracking-wider font-bold text-white/40">Telephone</p>
-              <a href="tel:+233500050924" className="text-sm font-semibold hover:text-[#F4B41A] transition-colors">
-                +233 50 005 0924
-              </a>
-            </div>
-          </div>
-        </div>
 
         {/* Footer Bottom copyright and legal details */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-white/40 gap-4">
-          <p>© {new Date().getFullYear()} Investas Pro Ghana. Visionary Growth. Local Intelligence.</p>
+          <p>© {new Date().getFullYear()} Investas Pro Ghana. All Rights Reserved.</p>
           <div className="flex gap-6">
-            <Link href="/about" className="hover:text-[#F4B41A] transition-colors">
-              Our Vision
-            </Link>
-            <Link href="/ventures" className="hover:text-[#F4B41A] transition-colors">
-              Our Investments
-            </Link>
             <Link href="/contact" className="hover:text-[#F4B41A] transition-colors">
               Partner Deck
+            </Link>
+            <Link href="#" className="hover:text-[#F4B41A] transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="#" className="hover:text-[#F4B41A] transition-colors">
+              Terms of Service
             </Link>
           </div>
         </div>
